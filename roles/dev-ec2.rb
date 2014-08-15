@@ -3,7 +3,8 @@ description "For Developer EC2 machines"
 run_list(
   "recipe[irc]",
   "recipe[git]",
-  "recipe[chruby::system]"
+  "recipe[chruby::system]",
+  "recipe[my_cookbook]"
 )
 
 default_attributes(
